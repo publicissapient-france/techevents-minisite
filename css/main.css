@@ -117,7 +117,7 @@ h1, h2 {
     margin: 0px;
 }
 
-.hello .header-bigdata {
+.hello .header {
     height: 368px;
     width: 596px;
     position: absolute;
@@ -153,7 +153,7 @@ h1, h2 {
     z-index: 10;
 }
 
-.hello .big-data-intro {
+.hello .intro {
     position: absolute;
     right: 10px;
     top: 320px;
@@ -161,95 +161,42 @@ h1, h2 {
     z-index: 10;
 }
 
-.hello .big-data-intro h1 {
+.hello .intro h1 {
     position: static;
     margin-bottom: 10px;
 }
 
-.hello .big-data-intro p {
+.hello .intro p {
     font-size: 16px;
     line-height: 30px;
     text-align: left;
 }
 
-.hello .big-data-intro p.download-pdf {
+.hello .intro p.download-pdf {
     margin-top: 10px;
     font-size: 18px;
 }
 
-.hello .big-data-intro p.download-pdf a {
+.hello .intro p.download-pdf a {
     margin-left: 10px;
     color: #6a205f;
 }
 
-/* our offer */
+/* incoming */
 
-
-.our-offer {
-    background-color: #f0efed;
-}
-
-.our-offer .our-offer-content {
-    margin: auto;
-    height: 100%;
-    width: 1000px;
-    position: relative;
-}
-
-.our-offer .our-offer-content h2 {
-    padding: 20px 0px;
-    font-size: 42px;
-}
-
-.our-offer .our-offer-content p {
-    padding: 0px 15px;
-    text-align: justify;
-    font-size: 16px;
-    line-height: 30px;
-}
-
-.our-offer .our-offer-content .our-offer-subcontent {
-    margin: auto;
-    width: 695px;
-}
-
-.our-offer-monetize {
-    height: 130px;
-    background: transparent url(../images/our-offer-monetize.png) no-repeat top center;
-}
-
-/* our formations */
-
-.our-formations .formations {
-    width: 700px;
-    margin: 0px auto 50px;
-}
-
-.our-formations .formations h4 {
-    text-align: center;
-    display: inline-block;
-    width: 100%;
-    color: #6d626b;
-    font-size: 24px;
-    margin-bottom: 8px;
-}
-
-
-/* case study */
-
-.our-clients {
+.incoming {
     background: transparent url(../images/case-study-bg.png) repeat top left;
 }
 
-.our-clients .section-content {
+.incoming .section-content {
     color: #FFFFFF;
 }
 
-.our-clients .section-content h2 {
+.incoming .section-content h2 {
     color: #31a4c3;
 }
 
-.our-clients .logos {
+.incoming .logos {
     height: 80px;
     background-color: rgba(0,0,0,.1);
     margin-bottom: 15px;
@@ -257,90 +204,42 @@ h1, h2 {
     padding: 0px 65px;
 }
 
-.our-clients .logos .logo {
-    background: url(../images/clients-logos-small.png) 0 0 no-repeat;
-    height: 80px;
-    width: 170px;
-    display: block;
-    float: left;
-}
-.our-clients .logos .logo-sncf {
+.incoming .logos .logo-sncf {
     background-position: 0px 0px;
 }
 
-.our-clients .logos .logo-orange {
+.incoming .logos .logo-orange {
     background-position: -2890px 0px;
 
 }
-.our-clients .logos .logo-bouygue {
-    background: url(../images/clients-logo-bouygue.png) 0px -5px no-repeat;
 
-}
-.our-clients .logos .logo-sacem {
+.incoming .logos .logo-sacem {
     background-position: -170px 0px;
 }
-.our-clients .logos .logo-and-you {
+.incoming .logos .logo-and-you {
     background-image: none;
     line-height: 70px;
     font-size: 30px;
     font-style: inherit;
     text-align: right;
     color: #31a4c3;
-
 }
-
-.our-clients .section-content .case-study {
+.incoming .section-content .case-study {
     position: relative;
 }
 
-.our-clients .case-study h3 {
+.incoming .case-study h3 {
     font-size: 28px;
     color: #31a4c3;
     margin-bottom: 10px;
 }
 
-.our-clients .section-content .case-study-sncf {
+.incoming .section-content .case-study-sncf {
     position: absolute;
     left: 300px;
     top: 40px;
     width: 600px;
 }
-
-.our-clients .case-study img {
-    margin-bottom: 25px;
-}
-
-.our-clients .case-study .case-study-sncf h4 {
-    font-size: 20px;
-    margin-bottom: 10px;
-}
-
-
-.our-clients .case-study .case-study-sncf .button {
-    display: inline-block;
-    background-color: #31a4c3;
-    text-transform: uppercase;
-    margin-top: 5px;
-    padding: 5px 10px;
-    color: #FFFFFF;
-}
-
-
-/*  partners */
-
-.our-partners {
-    /*background: #e1e3e7 url(../images/contact-bg.png) repeat top left;*/
-}
-
-.our-partners .image-container {
-    text-align: center;
-}
-
-.our-partners .partners-img {
-    /*width: 600px;*/
-}
-
-
 
 
 
