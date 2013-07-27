@@ -1,9 +1,9 @@
 big-data-minisite
 =================
 
-Hello,
+http://xebia-france.github.io/techevents-minisite/
 
-#### lama notepad mode activated
+### Useful links :
 
 - https://help.github.com/articles/creating-project-pages-manually
 
