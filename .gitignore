@@ -1,1 +1,6 @@
+*.iml
+*.ipr
+.idea
 _site/*
+node_modules
+server.js
