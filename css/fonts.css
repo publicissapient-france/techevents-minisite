@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'UbuntuRegular';
+    src: url('fonts/Ubuntu-R-webfont.eot');
+    src: url('fonts/Ubuntu-R-webfont.eot?#iefix') format('embedded-opentype'),
+    url('fonts/Ubuntu-R-webfont.woff') format('woff'),
+    url('fonts/Ubuntu-R-webfont.ttf') format('truetype'),
+    url('fonts/Ubuntu-R-webfont.svg#UbuntuRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}

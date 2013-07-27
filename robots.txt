@@ -1,0 +1,14 @@
+#
+# robots.txt
+#
+
+User-agent: *
+Crawl-delay: 10
+# Directories
+Disallow: /scripts/
+Disallow: /styles/
+Disallow: /images/
+# Files
+Disallow: /README.md
+Disallow: /RELEASE.md
+Disallow: /CNAME

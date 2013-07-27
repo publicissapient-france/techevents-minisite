@@ -1,12 +1,261 @@
+<!doctype html>
 <html>
-  <head>
-    <script type="text/javascript">
-      function RedirectionJavascript(){
-        document.location.href="http://blog.xebia.fr/category/tech-events/";
-      }
-   </script>
-  </head>
-  <body onLoad="setTimeout('RedirectionJavascript()', 1000)">
-     <div align="center"><img src="./loading.gif"/></div>
-  </body>
+    <head>
+        <title>Notre offre Big Data - Xebia IT Architects</title>
+        <meta charset="UTF-8">
+
+        <!-- seo -->
+        <meta name="description" content="Xebia vous accompagne dans votre d�marche Big Data, du conseil � la r�alisation en passant par la formation" />
+        <meta name="keywords" content="BigData, Big Data, NoSQL, Hadoop, MongoDB, Cassandra, Cloudera, 10Gen, Datastax" />
+        <meta name="content-language" content="fr">
+        <meta name="robots" content="follow,index,all">
+
+        <!-- meta -->
+        <meta name="author" content="Xebia IT Architects">
+        <meta name="reply-to" content="web-admin@xebia.com">
+        <meta name="owner" content="Xebia IT Architects">
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+
+        <!-- browser meta -->
+        <meta name="viewport" content="width=device-width">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <!-- css -->
+        <link rel="stylesheet" type="text/css" href="css/reset.css"/>
+        <link rel="stylesheet" type="text/css" href="css/fonts.css"/>
+        <link rel="stylesheet" type="text/css" href="css/main.css"/>
+        <link rel="stylesheet" type="text/css" href="js/libs/flexslider/flexslider.css"/>
+
+        <!-- libs -->
+        <script type="text/javascript" src="js/libs/json2.js"></script>
+        <script type="text/javascript" src="js/libs/jquery.js"></script>
+        <script type="text/javascript" src="js/libs/flexslider/jquery.flexslider.js"></script>
+        <script type="text/javascript" src="js/libs/underscore.js"></script>
+        <script type="text/javascript" src="js/libs/moment.js"></script>
+        <script type="text/javascript" src="js/libs/backbone.js"></script>
+        <script type="text/javascript" src="js/libs/backbone-associations.js"></script>
+
+        <!-- app -->
+        <script type="text/javascript" src="js/fwk.js"></script>
+        <script type="text/javascript" src="js/app.js"></script>
+        <script type="text/javascript" src="js/vimeo.js"></script>
+        <script type="text/javascript" src="js/blog.js"></script>
+        <script type="text/javascript" src="js/nav.js"></script>
+
+    </head>
+    <body>
+        <script>
+            $(function () {
+                window.app = new window.xebia.Application();
+                app.start();
+            });
+        </script>
+
+        <div class="nav" id="nav">
+            <div class="nav-content">
+                <a href="#bigdata">Big Data ?</a>
+                <a href="#our-offer">Conseil & R&eacute;alisation</a>
+                <a href="#our-formations">Formation</a>
+                <a href="#case-study">Nos clients</a>
+                <a href="#partners">Partenaires</a>
+                <a href="#our-videos">Vid&eacute;os</a>
+                <a href="#our-articles">Publications</a>
+                <div class="pointer"></div>
+            </div>
+        </div>
+
+        <div id="content">
+
+            <div class="hello" id="bigdata">
+                <div class="hello-content">
+                    <h2>
+                        <a href="http://www.xebia.fr">
+                            <img src="images/hello-xebia.png" alt="Xebia">
+                        </a>
+                    </h2>
+                    <div class="hello-content-icosahedron"></div>
+                    <img class="header-bigdata" src="images/header-bigdata.png"/>
+                    <div class="hello-laptop"></div>
+                    
+                    <div class="big-data-intro">
+                        <h1>
+                            Big Data ?
+                        </h1>
+                        <p>
+                            Le terme Big Data a &#233;t&#233; invent&#233; pour traduire un &#233;tat de fait :
+                            <br/>
+                            Les interactions entre les hommes et les machines et entre les machines elles-m&#234;mes sont
+                            g&#233;n&#233;ratrices d&#39;un volume de donn&#233;es exponentiellement croissant.
+                            Bien au del&#224; du buzz word, nous voyons Big Data comme un formidable moyen de cr&#233;er de
+                            nouveaux usages &#224; destination des directions, du marketing, des DSI et des
+                            administrateurs syst&#232;mes. Les &#233;volutions techniques r&#233;centes cr&#233;ent de
+                            nouvelles opportunit&#233;s et nous aidons nos clients &#224; s&#39;en saisir.
+                        </p>
+                        <p class="download-pdf">
+                            Vous voulez en savoir plus ? <a target="_blank" href="files/Brochure_Big_Data.pdf">téléchargez la brochure</a>
+                        </p>
+                    </div>
+                    
+                </div>
+                <div class="hello-line"></div>
+                <div class="icosahedron"></div>
+            </div>
+
+            <div class="our-offer" id="our-offer">
+                <div class="our-offer-content">
+                    <h2>
+                        Notre offre de conseil et de r&eacute;alisation
+                    </h2>
+                    <div class="our-offer-subcontent">
+                        <p>Le d&eacute;fi actuel consiste &agrave; exploiter vos &quot;Big Data&quot;, &agrave; mon&eacute;tiser
+                            ces t&eacute;ra-octets disponibles.
+                            <br/>
+                            Xebia vous accompagne &agrave; chaque &eacute;tape de la transformation de vos donn&eacute;es en information.
+                        </p>
+                        <img class="our-offer-schema" src="images/our-offer-schema.png"/>
+                    </div>
+                </div>
+            </div>
+            <div class="our-offer-monetize"></div>
+
+            <div class="our-formations section" id="our-formations">
+                <div class="section-content">
+                    <h2>Nos formations</h2>
+                    <div class="formations flexslider">
+                        <ul class="slides">
+                            <li>
+                                <a href="http://training.xebia.fr/formations-big-data-nosql/formation-hadoop-certifiante-developpeurs.html">
+                                    <h4>Certification Hadoop D&eacute;veloppeurs avec Cloudera</h4>
+                                    <img src="images/formations/formation-hadoop-developpeurs.png"/>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://training.xebia.fr/formations-big-data-nosql/formation-hadoop-certifiante-administrateurs.html">
+                                    <h4>Certification Hadoop Administrateurs avec Cloudera</h4>
+                                    <img src="images/formations/formation-hadoop-admnistrateurs.png"/>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://training.xebia.fr/formations-big-data-nosql/formation-mongodb.html">
+                                    <h4>Formation MongoDB avec 10Gen</h4>
+                                    <img src="images/formations/formation-mongodb.png"/>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://training.xebia.fr/formations-big-data-nosql/formation-apache-cassandra.html">
+                                    <h4>Formation Apache Cassandra certifiante avec DataStax</h4>
+                                    <img src="images/formations/formation-cassandra.png"/>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="our-clients section" id="case-study">
+                <div class="section-content">
+                    <h2>Nos clients</h2>
+
+                    <div class="logos">
+                        <div class="logo logo-sncf"></div>
+                        <div class="logo logo-orange"></div>
+                        <div class="logo logo-bouygue"></div>
+                        <div class="logo logo-sacem"></div>
+                        <div class="logo logo-and-you">
+                            et vous ?
+                        </div>
+                    </div>
+
+                    <div class="case-study">
+                        <h3>Cas client</h3>
+                        <img class="case-study-sncf-img" src="images/case-study-sncf.png"/>
+                        <div class="case-study-sncf">
+                            <h4>VOYAGES-SNCF.COM</h4>
+                            <p>
+                                Le premier site web marchand de France Voyages-sncf.com Groupe
+                                <br/>
+                                a fait appel &agrave; Xebia pour mettre en place son module Big Data.
+                            </p>
+                            <a class="button" href="./files/xebia-vsct-bigdata-etude-de-cas.pdf">
+                                voir l'&eacute;tude de cas
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="our-partners section" id="partners">
+                <div class="section-content">
+                    <h2>Nos partenaires</h2>
+                    <div class="image-container">
+                        <img class="partners-img" usemap="partners-map" src="images/partners.png"/>
+                        <map id="partners-map" name="partners-map">
+                            <area shape="rect" coords="295,175,460,237" href="http://www.cloudera.com" alt="Cloudera" title="Cloudera" />
+                            <area shape="rect" coords="223,365,422,427" href="http://www.10gen.com" alt="10gen" title="10gen" />
+                            <area shape="rect" coords="224,289,486,355" href="http://www.datastax.com" alt="DataStax" title="DataStax" />
+                            <area shape="poly" coords="210,212,285,211,287,250,411,254,412,285,211,284," href="http://www.neotechnology.com/" alt="Neotechnology" title="Neotechnology" />
+                        </map>
+                    </div>
+                </div>
+            </div>
+
+            <div class="our-videos section" id="our-videos">
+                <div class="pattern">
+                    <div class="section-content">
+                        <a name="contact">
+                            <h2>Nos dernieres vidéos</h2>
+                        </a>
+                        <div class="videos-container">
+                            <!-- to be filled from javascript -->
+                        </div>
+                        <a class="see-more-videos" href="http://vimeo.com/channels/544319">
+                            Voir toutes nos videos Big Data
+                        </a>
+                    </div>
+                    <div class="contact-illustration"></div>
+                </div>
+
+            </div>
+
+
+            <div class="our-articles section" id="our-articles">
+                <div class="work-boids"></div>
+                <div class="section-content">
+                    <h2>Nos derniers articles</h2>
+                    <div class="articles-container">
+                        <!-- to be filled from javascript -->
+                    </div>
+                    <a class="see-more-articles" href="http://blog.xebia.fr/category/nosql">
+                        Voir tous nos articles sur Big Data
+                    </a>
+                </div>
+            </div>
+
+
+            <div class="social">
+                <a href="https://twitter.com/XebiaFr" class="work-twitter" target="_blank"></a>
+                <a href="http://fr.viadeo.com/fr/profile/xebia-it-architects.xebia-it-architects" class="work-viadeo" target="_blank"></a>
+                <a href="https://plus.google.com/100396468532572979348" class="work-googleplus" target="_blank"></a>
+                <a href="http://www.linkedin.com/company/xebia" class="work-linkedin" target="_blank"></a>
+            </div>
+
+        </div>
+
+        <div class="footer">
+            <div class="tagline"></div>
+        </div>
+	<script type="text/javascript">
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-1657252-9']);
+	  _gaq.push(['_trackPageview']);
+	  (function() {
+	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+	</script>
+    </body>
 </html>
