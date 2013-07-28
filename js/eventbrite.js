@@ -71,10 +71,18 @@ definePackage("xebia.eventbrite", function(pkg) {
         render : function() {
             this.$el.empty();
             this.ui = {};
-            this.ui.img = $("<img>").attr("src", this.model.get("logo")).appendTo(this.$el);
-            this.ui.title = $("<h3>").html(this.model.get("title")).appendTo(this.$el);
+            this.ui.$imgContainer = $("<div class='img-container'>").appendTo(this.$el);
+            this.ui.img = $("<img>").attr("src", this.model.get("logo")).appendTo(this.ui.$imgContainer);
+            this.ui.title = $("<h3>").html(this.model.get("title")).appendTo(this.ui.$imgContainer);
             var desc = $(this.model.get('description')).text().trim();
-            this.ui.description = $("<p>").addClass("description").html(desc).appendTo(this.$el);
+            var sentences = desc.split('.');
+            var sentence = sentences[3] || sentences[sentences.length - 1];
+            /*if (sentence.length > 200){ // programmatical mutiline ellipsis
+                sentence = sentence.substring(0, 10- 3);
+                sentence += "..."
+            }*/
+            this.ui.description = $("<p>").addClass("description").html(sentence).appendTo(this.$el);
+            this.ui.link = $("<a>").attr('href', this.model.get('url')).html("S'inscrire").appendTo(this.$el);
         }
 
     });
