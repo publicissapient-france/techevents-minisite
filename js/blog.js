@@ -88,9 +88,9 @@ definePackage("xebia.blog", function(pkg) {
 
         render : function() {
             this.$el.empty();
-            var firsts = this.collection.first(5);
-            _.each(firsts, function(video, i) {
-                var view = new pkg.BlogArticleView({model : video, last : i==firsts.length-1});
+            var firsts = this.collection.first(3);
+            _.each(firsts, function(event, i) {
+                var view = new pkg.TechEventView({model : event, last : i==firsts.length-1});
                 view.$el.appendTo(this.$el);
                 view.render();
             }, this);

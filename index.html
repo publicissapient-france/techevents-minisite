@@ -36,12 +36,13 @@
         <script type="text/javascript" src="js/libs/moment.js"></script>
         <script type="text/javascript" src="js/libs/backbone.js"></script>
         <script type="text/javascript" src="js/libs/backbone-associations.js"></script>
+        <script type='text/javascript' src="http://evbdn.eventbrite.com/s3-s3/static/js/platform/Eventbrite.jquery.js"></script>
 
         <!-- app -->
         <script type="text/javascript" src="js/fwk.js"></script>
         <script type="text/javascript" src="js/app.js"></script>
+        <script type="text/javascript" src="js/eventbrite.js"></script>
         <script type="text/javascript" src="js/vimeo.js"></script>
-        <script type="text/javascript" src="js/blog.js"></script>
         <script type="text/javascript" src="js/nav.js"></script>
 
     </head>
@@ -54,14 +55,16 @@
         </script>
 
         <div class="nav" id="nav">
-            <div class="nav-content">
-                <a href="#sharing-knowledge">Sharing Knowledge</a>
-                <a href="#incoming">&Agrave; venir</a>
-                <a href="#popular">Populaires</a>
-                <a href="#our-videos">Vid&eacute;os</a>
-                <a href="#all">Tous</a>
+            <nav class="nav-content">
+                <ul>
+                    <li><a href="#sharing-knowledge">Sharing Knowledge</a></li>
+                    <li><a href="#incoming">&Agrave; venir</a></li>
+                    <li><a href="#popular">Populaires</a></li>
+                    <li><a href="#our-videos">Vid&eacute;os</a></li>
+                    <li><a href="#all">Tous</a></li>
+                </ul>
                 <div class="pointer"></div>
-            </div>
+            </nav>
         </div>
 
         <div id="content">
@@ -94,28 +97,27 @@
                 <div class="icosahedron"></div>
             </div>
 
-            <div class="incoming section " id="incoming">
+            <section class="incoming " id="incoming">
                 <div class="section-content">
                     <h2>
                         &Agrave; venir
                     </h2>
-                    <div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec commodo elit. Nullam aliquet ipsum elit, id tincidunt ipsum auctor vitae. Integer dictum elit ut accumsan luctus. Duis malesuada odio eget diam molestie, vel consequat mi porttitor. Etiam pellentesque ipsum nec quam rhoncus tincidunt. Mauris tincidunt massa non diam varius commodo. Aenean posuere fringilla pellentesque. Suspendisse tempor nunc ac velit luctus tincidunt. Suspendisse ipsum massa, convallis eget ipsum quis, condimentum egestas massa.</p>
+                    <div class="events-container">
+                        <!-- to be filled from javascript -->
                     </div>
                 </div>
-            </div>
-            <div class="incoming-monetize"></div>
+            </section>
 
-            <div class="popular section" id="popular">
+            <section class="popular" id="popular">
                 <div class="section-content">
                     <h2>Populaires</h2>
                     <div class="popular flexslider">
 
                     </div>
                 </div>
-            </div>
+            </section>
 
-            <div class="our-videos section" id="our-videos">
+            <section class="our-videos" id="our-videos">
                 <div class="pattern">
                     <div class="section-content">
                         <a name="contact">
@@ -131,14 +133,14 @@
                     <div class="contact-illustration"></div>
                 </div>
 
-            </div>
+            </section>
 
-            <div class="all section" id="all">
+            <section class="all" id="all">
                 <div class="section-content">
                     <h2>Tous</h2>
 
                 </div>
-            </div>
+            </section>
 
 
             <div class="social">
@@ -150,9 +152,9 @@
 
         </div>
 
-        <div class="footer">
+        <footer>
             <div class="tagline"></div>
-        </div>
+        </footer>
 	<script type="text/javascript">
 	  var _gaq = _gaq || [];
 	  _gaq.push(['_setAccount', 'UA-1657252-9']);

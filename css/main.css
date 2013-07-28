@@ -51,6 +51,11 @@ h1, h2 {
     margin: auto;
     position: relative;
 }
+
+.nav .nav-content ul li {
+    display: inline-block;
+}
+
 .nav .nav-content a {
     font: 15px 'UbuntuRegular', Arial, sans-serif;
     color: #6a205f;
@@ -69,18 +74,18 @@ h1, h2 {
 
 /* generic section styles */
 
-.section {
+section {
 
 }
 
-.section .section-content {
+section .section-content {
     margin: auto;
     height: 100%;
     width: 1000px;
     position: relative;
 }
 
-.section .section-content h2 {
+section .section-content h2 {
     padding: 20px 0px;
     font-size: 42px;
 }
@@ -406,12 +411,12 @@ h1, h2 {
 
 /* footer */
 
-.footer {
+footer {
     background-color: #f1f0ee;
     height: 80px;
 }
 
-.footer .tagline {
+footer .tagline {
     width: 1000px;
     margin: auto;
     height: 80px;

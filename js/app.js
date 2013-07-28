@@ -2,7 +2,9 @@
 definePackage("xebia", function(pkg) {
 
     pkg.constants = {
-        VIMEO_CHANNEL_ID : "544319"
+        VIMEO_CHANNEL_ID : "544319",
+        EVENTBRITE_USER_APIKEY : "133119264928907654573",
+        EVENTBRITE_APP_APIKEY : "5HM4H3GBHO5WB2DRMW"
     };
 
     pkg.Application = fwk.Class.extend({
@@ -16,17 +18,15 @@ definePackage("xebia", function(pkg) {
             var videosView = new pkg.vimeo.VimeoVideoCollectionView({collection : videos});
             videosView.$el.appendTo($("#our-videos .videos-container"));
 
-            var articles = new pkg.blog.BlockArticleCollection();
-            articles.fetch();
-
-            var articlesView = new pkg.blog.BlogArticleCollectionView({collection: articles});
-            articlesView.$el.appendTo($("#our-articles .articles-container"));
-
             var navView = new pkg.nav.NavView();
 
+            var events = new pkg.eventbrite.TechEventCollection();
+            events.fetch();
 
+            var techeventView = new pkg.eventbrite.TechEventCollectionView({collection : events});
+            techeventView.$el.appendTo($("#incoming .events-container"));
 
-            $('.our-formations .flexslider').flexslider({
+            /*$('.our-formations .flexslider').flexslider({
                 animation: "slide",
                 animationLoop: true,
                 directionNav: false,
@@ -35,7 +35,7 @@ definePackage("xebia", function(pkg) {
                 itemMargin: 0,
                 minItems: 1,
                 maxItems: 1
-            });
+            });*/
 
         }
 
